@@ -1,0 +1,474 @@
+:root {
+    --dark-navy:    #0E1626;
+    --deep-blue:    #1B2A4A;
+    --electric-blue:#1F7AE0;
+    --bright-cyan:  #4CC9F0;
+    --ice-blue:     #E6FAFD;
+    --white:        #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--ice-blue);
+    color: var(--dark-navy);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.navbar-sportiva {
+    background-color: var(--dark-navy);
+    padding: 0.75rem 0;
+    box-shadow: 0 2px 12px rgba(14, 22, 38, 0.3);
+}
+
+.sportiva-brand {
+    color: var(--white) !important;
+    font-weight: 800;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.sportiva-brand i {
+    color: var(--bright-cyan);
+}
+
+.navbar-sportiva .nav-link {
+    color: rgba(255, 255, 255, 0.78) !important;
+    font-weight: 500;
+    padding: 0.45rem 0.85rem;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.navbar-sportiva .nav-link:hover,
+.navbar-sportiva .nav-link.active {
+    color: var(--white) !important;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.btn-primary-sportiva {
+    background-color: var(--electric-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    padding: 0.65rem 1.6rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s, transform 0.15s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-primary-sportiva:hover {
+    background-color: #1667c4;
+    color: var(--white);
+    transform: translateY(-1px);
+}
+
+.btn-outline-sportiva {
+    border: 2px solid var(--electric-blue);
+    color: var(--electric-blue);
+    background: transparent;
+    border-radius: 10px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline-sportiva:hover {
+    background-color: var(--electric-blue);
+    color: var(--white);
+}
+
+.btn-logout {
+    background-color: transparent;
+    border: 1.5px solid rgba(76, 201, 240, 0.5);
+    color: var(--bright-cyan) !important;
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+    font-weight: 600;
+    font-size: 0.88rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-logout:hover {
+    background-color: var(--bright-cyan);
+    color: var(--dark-navy) !important;
+    border-color: var(--bright-cyan);
+}
+
+.login-wrapper {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.login-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 8px 32px rgba(14, 22, 38, 0.1);
+}
+
+.login-logo-icon {
+    width: 68px;
+    height: 68px;
+    background: var(--dark-navy);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.login-logo-icon i {
+    font-size: 2rem;
+    color: var(--bright-cyan);
+}
+
+.login-brand {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--dark-navy);
+    letter-spacing: 1px;
+}
+
+.login-tagline {
+    color: var(--electric-blue);
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+.login-desc {
+    color: #5a6a7e;
+    font-size: 0.93rem;
+}
+
+.form-control-sportiva {
+    border: 2px solid #d8e4f0;
+    border-radius: 10px;
+    padding: 0.65rem 1rem;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+}
+
+.form-control-sportiva:focus {
+    border-color: var(--electric-blue);
+    box-shadow: 0 0 0 3px rgba(31, 122, 224, 0.12);
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--dark-navy) 0%, var(--deep-blue) 60%, #1a3560 100%);
+    padding: 5rem 0 4rem;
+    color: var(--white);
+}
+
+.hero-welcome {
+    color: var(--bright-cyan);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.hero-title {
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+}
+
+.hero-highlight {
+    color: var(--bright-cyan);
+}
+
+.hero-desc {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 1.05rem;
+    max-width: 480px;
+    margin-bottom: 2rem;
+}
+
+.hero-icon-wrap {
+    width: 240px;
+    height: 240px;
+    background: rgba(76, 201, 240, 0.08);
+    border: 2px solid rgba(76, 201, 240, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.hero-icon {
+    font-size: 7rem;
+    color: var(--bright-cyan);
+    opacity: 0.6;
+}
+
+.section-produk {
+    padding: 5rem 0;
+    background-color: var(--ice-blue);
+}
+
+.section-label {
+    display: inline-block;
+    background-color: rgba(31, 122, 224, 0.1);
+    color: var(--electric-blue);
+    font-weight: 600;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.section-title {
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: var(--dark-navy);
+}
+
+.section-sub {
+    color: #5a6a7e;
+    font-size: 1rem;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(14, 22, 38, 0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(14, 22, 38, 0.13);
+}
+
+.product-img-wrap {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    background: #f0f7ff;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0.75rem;
+    transition: transform 0.3s;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.04);
+}
+
+.product-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: var(--dark-navy);
+    color: var(--bright-cyan);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+}
+
+.product-body {
+    padding: 1.25rem 1.4rem 1.4rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark-navy);
+    margin-bottom: 0.4rem;
+}
+
+.product-desc {
+    font-size: 0.88rem;
+    color: #6b7a8e;
+    flex: 1;
+    margin-bottom: 0.9rem;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--electric-blue);
+    margin-bottom: 0;
+}
+
+.page-header {
+    padding-top: 1rem;
+}
+
+.profile-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 6px 24px rgba(14, 22, 38, 0.09);
+}
+
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+    background: var(--dark-navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-avatar i {
+    font-size: 3rem;
+    color: var(--bright-cyan);
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--dark-navy);
+    margin-bottom: 0.4rem;
+}
+
+.profile-role {
+    display: inline-block;
+    background-color: rgba(31, 122, 224, 0.1);
+    color: var(--electric-blue);
+    font-weight: 600;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    padding: 0.25rem 1rem;
+}
+
+.profile-divider {
+    border-color: #e3edf8;
+}
+
+.profile-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid #f0f5fc;
+}
+
+.profile-item:last-child {
+    border-bottom: none;
+}
+
+.profile-item-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--ice-blue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.profile-item-icon i {
+    font-size: 1.1rem;
+    color: var(--electric-blue);
+}
+
+.profile-item-label {
+    font-size: 0.78rem;
+    color: #8a9bb5;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.2rem;
+}
+
+.profile-item-value {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin-bottom: 0;
+}
+
+.footer-sportiva {
+    background-color: var(--dark-navy);
+    color: rgba(255, 255, 255, 0.65);
+    padding: 1.75rem 0;
+    margin-top: auto;
+}
+
+.footer-brand {
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+.footer-brand i {
+    color: var(--bright-cyan);
+}
+
+.footer-tagline {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+.footer-copy {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3.5rem 0 3rem;
+        text-align: center;
+    }
+
+    .hero-desc {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .login-card {
+        padding: 2rem 1.5rem;
+    }
+}
